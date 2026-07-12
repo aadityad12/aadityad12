@@ -111,10 +111,7 @@ During wildfire call surges, dispatchers drown in volume. Clear Dispatch puts fo
 
 ## 📊 Signal, Not Noise
 
-<sub>Metrics that mean something — pulled live from the GitHub API and re-rendered on every visit, so they never go stale.</sub>
-
 <div align="center">
-  <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api?username=aadityad12&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub stats"/>
   <img height="170" src="https://streak-stats.demolab.com/?user=aadityad12&theme=tokyonight&hide_border=true" alt="Streak"/>
 </div>
 
