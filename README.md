@@ -1,141 +1,54 @@
-<!-- ============================================================ -->
-<!--  HEADER · animated gradient wave (Tokyo Night palette)       -->
-<!-- ============================================================ -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:414868,100:7aa2f7&height=180&section=header&text=Aaditya%20Desai&fontSize=42&fontColor=c0caf5&animation=fadeIn&fontAlignY=32&desc=AI%20systems%2C%20down%20to%20the%20hardware&descSize=16&descAlignY=52" width="100%" alt="banner"/>
-</div>
+# Aaditya Desai
 
-<!-- Auto-typing headline -->
-<div align="center">
-  <a href="https://github.com/aadityad12">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=20&duration=2800&pause=900&color=7AA2F7&center=true&vCenter=true&width=620&lines=On-device+NPU+inference+%C2%B7+8ms+on+a+phone;Custom+BLE+wire+protocols+%C2%B7+offline+mesh;LLM+agents%2C+evals+%26+context+engineering;End-to-end+deployments%2C+not+demo+notebooks" alt="typing intro"/>
-  </a>
-</div>
+I'm a Computer Engineering student at San José State University, graduating in May 2028. I build software that has to work within real constraints: limited compute, unreliable connectivity, tight latency budgets, or a bounded context window. I like working through the full system, from the model or protocol to the application around it.
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/aaditya-desai-12d"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:aaditya.d.desai@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
-  <img src="https://img.shields.io/badge/SJSU-Computer%20Engineering%20'27-1a1b27?style=flat-square&labelColor=414868" alt="SJSU"/>
-  <img src="https://img.shields.io/badge/Open%20to-AI%2FML%20%26%20Edge%20AI%20Internships-1a1b27?style=flat-square&labelColor=414868&color=9ece6a" alt="Open to internships"/>
+**Seeking Summer 2027 software engineering internships.**
+
+<p>
+  <a href="https://aadityad.dev" title="Portfolio"><img src="https://api.iconify.design/mdi/web.svg?color=%23006CFF" width="28" height="28" alt="Portfolio"></a>&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/aaditya-desai-12d" title="LinkedIn"><img src="https://api.iconify.design/simple-icons/linkedin.svg?color=%230A66C2" width="28" height="28" alt="LinkedIn"></a>&nbsp;&nbsp;
+  <a href="mailto:aaditya.d.desai@gmail.com" title="Email"><img src="https://api.iconify.design/simple-icons/gmail.svg?color=%23EA4335" width="28" height="28" alt="Email"></a>&nbsp;&nbsp;
+  <a href="https://aadityad.dev/Aaditya_Desai_Portfolio_Resume.pdf" title="Résumé"><img src="https://api.iconify.design/mdi/file-pdf-box.svg?color=%23EC1C24" width="28" height="28" alt="Résumé"></a>
 </p>
 
-Computer Engineering student at San Jose State University (Dec 2027) building AI systems down to the hardware: on-device NPU inference, custom BLE wire protocols, and LLM agents and evals. I ship end-to-end deployments, not demo notebooks.
+## Selected work
 
-<br/>
+### [Accordion](https://github.com/a-Fig/accordion) · [Live site](https://get-accordion.dev)
 
-## ⚡ Featured Builds
+Reversible context management for long-running coding agents. Instead of replacing an entire conversation with a lossy summary, Accordion can fold, unfold, and pin individual blocks as the context budget changes.
 
-### 🪗 [Accordion](https://github.com/aadityad12/Accordion)
+I worked on its three-stage relevance pipeline, which combines keyword scoring, bi-encoder retrieval, and cross-encoder reranking. We built it at the 2026 UC Berkeley AI Hackathon, where it won The Token Company sponsor track.
 
-**Reversible context management for LLM coding agents** &nbsp;·&nbsp; 🏆 *Winner — The Token Company prize @ UC Berkeley AI Hackathon 2026*
-
-Treats the entire context window as foldable blocks under a token budget — fold what's irrelevant now, unfold it when it matters again.
-
-- Three-stage relevance pipeline (`the-conductor-v2`): keyword filter → bi-encoder cosine → cross-encoder rerank
-- Self-calibrating fold targets that adapt compression to the live token budget
-- Live dashboard for watching fold/unfold decisions in real time
-
-<kbd>TypeScript</kbd> <kbd>Node.js</kbd> <kbd>SvelteKit</kbd> <kbd>bi- + cross-encoder retrieval</kbd>
+<sub>Python · TypeScript · Hugging Face Transformers · SvelteKit</sub>
 
 ---
 
-### 🌡️ [Temper](https://github.com/aadityad12/Temper)
+### [GazeBoard](https://github.com/aadityad12/GazeBoard)
 
-**Evaluate the environment around an LLM, not the model.**
+An Android prototype that lets people select and speak phrases using their eyes. Camera data stays on the phone, and the app declares no network permission.
 
-Most eval tools score the model. Temper scores everything wrapped around it — system prompt, tools, skill files — because that's where most deployed quality is won or lost.
+I built the pipeline from CameraX capture through face detection, LiteRT inference, four-point calibration, dwell selection, and text-to-speech. The inference path targets the Qualcomm Hexagon NPU through LiteRT's `CompiledModel` API.
 
-- Scores a harness against a bare-model baseline across six dimensions
-- Generates targeted patches, then re-evaluates to confirm they actually worked
-- Core eval engine built end-to-end: baseline → diagnosis → patch → re-eval loop
-
-<kbd>Python</kbd> <kbd>FastAPI</kbd> <kbd>Gemini</kbd> <kbd>LLM evals</kbd>
+<sub>Kotlin · Jetpack Compose · CameraX · LiteRT · ML Kit</sub>
 
 ---
 
-### 🧿 [GazeBoard](https://github.com/aadityad12/GazeBoard)
+### [ApexTracker](https://github.com/aadityad12/Apex-Tracker)
 
-**Speak with your eyes — on an off-the-shelf phone.**
+An offline-first Android app I use for budgeting, study tracking, reminders, notes, screen time, and research papers. Room is the source of truth, while sign-in adds optional Firestore sync.
 
-Lets ALS patients type and speak using only their eyes. No dedicated hardware, no cloud, no connectivity required.
+The codebase includes encrypted local storage, biometric access, reboot-safe alarms, home-screen widgets, schema migrations, and automated tests. It has grown from a habit-building project into software I use every day.
 
-- MediaPipe FaceMesh (478 landmarks) compiled to the Qualcomm Hexagon NPU via the LiteRT `CompiledModel` API — **~8 ms inference, fully offline**
-- Custom 4-point affine calibration engine mapping gaze vectors to screen coordinates
-- End-to-end Android deployment: camera pipeline → NPU → UI at interactive framerates
-
-<kbd>Kotlin</kbd> <kbd>Android</kbd> <kbd>LiteRT</kbd> <kbd>MediaPipe</kbd> <kbd>Hexagon NPU</kbd> <kbd>CameraX</kbd>
+<sub>Kotlin · Jetpack Compose · Room · SQLite · Firebase · WorkManager</sub>
 
 ---
 
-### 📡 [Echo](https://github.com/aadityad12/Echo)
+### [Temper](https://github.com/aadityad12/Temper)
 
-**Emergency alerts that hop phone-to-phone with zero infrastructure.**
+A prototype for evaluating the environment around an AI agent, including its system prompt, tools, and skill files, against a bare-model baseline on the same tasks.
 
-When the internet and cell towers go down in a disaster, alerts still need to move. Echo makes phones the network.
+I built the local evaluation harness and FastAPI service, along with the patch and re-evaluation loop. The repository includes a deterministic integration path so the full workflow can be tested without model API keys.
 
-- Custom GATT chunked-transfer protocol with native Kotlin *and* Swift implementations
-- Gossip mesh with SHA-1 deduplication; Raspberry Pi relay nodes extend range
-- Offline translation into 23 languages — alerts arrive readable, not just received
+<sub>Python · FastAPI · JSON Schema · Server-Sent Events · LLM evaluation</sub>
 
-<kbd>Flutter</kbd> <kbd>Kotlin</kbd> <kbd>Swift</kbd> <kbd>BLE / GATT</kbd> <kbd>gossip mesh</kbd> <kbd>Raspberry Pi</kbd>
-
----
-
-### 📱 [ApexTracker](https://github.com/aadityad12/Trackers)
-
-**Budget, study, screen time, reminders & notes — one native Android app.**
-
-Consolidates the trackers you'd otherwise juggle across five different apps into six independent MVVM modules behind a single menu — fully offline-first.
-
-- Room is the source of truth; Google Sign-In adds optional Firestore sync — never required
-- Recurring reminders with exact `AlarmManager` scheduling that survives reboots, with graceful fallback when the exact-alarm permission is revoked
-- Per-app screen time via `UsageStatsManager`; subscriptions auto-generate budget items, back-filling missed months
-
-<kbd>Kotlin</kbd> <kbd>Jetpack Compose</kbd> <kbd>Material 3</kbd> <kbd>Room / SQLite</kbd> <kbd>Firebase</kbd>
-
----
-
-### 🚒 [Clear Dispatch](https://github.com/aadityad12/Clear-Dispatch)
-
-**Four LLM agents behind a 911 dispatcher during wildfire surges.**
-
-During wildfire call surges, dispatchers drown in volume. Clear Dispatch puts four cooperating agents behind them — with the human always in control.
-
-- Agents handle triage, unit routing, and voice briefings; the dispatcher keeps final authority on every action
-- Real-time WebSocket pipeline with zero polling — updates push the instant state changes
-- Human-in-the-loop by design, not as an afterthought
-
-<kbd>Python</kbd> <kbd>FastAPI</kbd> <kbd>React</kbd> <kbd>Claude</kbd> <kbd>WebSockets</kbd>
-
-<br/>
-
-## 📊 Signal, Not Noise
-
-<div align="center">
-  <img height="170" src="https://streak-stats.demolab.com/?user=aadityad12&theme=tokyonight&hide_border=true" alt="Streak"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aadityad12&theme=tokyo-night&hide_border=true&area=true&radius=8" width="96%" alt="Contribution graph"/>
-</div>
-
-<br/>
-
-## 📫 Reach Me
-
-<div align="center">
-  <a href="mailto:aaditya.d.desai@gmail.com">
-    <img src="https://img.shields.io/badge/aaditya.d.desai%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/aaditya-desai-12d">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-</div>
-
-<!-- FOOTER · mirrored wave to bookend the header -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7aa2f7,50:414868,100:1a1b27&height=120&section=footer" width="100%" alt="footer"/>
-</div>
+More projects and longer writeups are available on [aadityad.dev](https://aadityad.dev).
