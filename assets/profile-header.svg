@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title description">
+  <title id="title">Aaditya Desai</title>
+  <description id="description">Computer Engineering student at San José State University seeking Summer 2027 software engineering internships.</description>
+
+  <rect x="1" y="1" width="1198" height="318" rx="18" fill="#f7f3ea" stroke="#d8d0c3" stroke-width="2"/>
+
+  <rect x="62" y="47" width="52" height="5" rx="2.5" fill="#ef5b2a"/>
+  <text x="132" y="55" fill="#625d54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="600" letter-spacing="2.4">ENGINEERING / SELECTED WORK</text>
+
+  <text x="58" y="158" fill="#191816" font-family="Georgia, 'Times New Roman', serif" font-size="72" letter-spacing="-2">Aaditya Desai</text>
+  <text x="62" y="202" fill="#514d46" font-family="Inter, Arial, sans-serif" font-size="20" letter-spacing="0.4">Computer Engineering · San José State University</text>
+
+  <rect x="62" y="240" width="562" height="40" rx="20" fill="#191816"/>
+  <circle cx="86" cy="260" r="5" fill="#ef5b2a"/>
+  <text x="103" y="266" fill="#fffdf8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="600" letter-spacing="0.9">SEEKING SUMMER 2027 SOFTWARE ENGINEERING INTERNSHIPS</text>
+
+  <line x1="792" y1="42" x2="792" y2="278" stroke="#d8d0c3" stroke-width="1.5"/>
+
+  <g fill="none" stroke="#b8afa1" stroke-width="2">
+    <path d="M858 104 H926 V72 H1028"/>
+    <path d="M858 158 H902 V198 H1032 V244 H1106"/>
+    <path d="M926 104 V142 H1070"/>
+    <path d="M1028 72 V112 H1110"/>
+  </g>
+  <g fill="#f7f3ea" stroke="#ef5b2a" stroke-width="3">
+    <circle cx="858" cy="104" r="7"/>
+    <circle cx="858" cy="158" r="7"/>
+    <circle cx="926" cy="104" r="7"/>
+    <circle cx="1028" cy="72" r="7"/>
+    <circle cx="1070" cy="142" r="7"/>
+    <circle cx="1032" cy="198" r="7"/>
+    <circle cx="1106" cy="244" r="7"/>
+  </g>
+
+  <circle cx="984" cy="158" r="54" fill="#191816"/>
+  <text x="984" y="174" text-anchor="middle" fill="#fffdf8" font-family="Georgia, 'Times New Roman', serif" font-size="46">AD</text>
+  <circle cx="1027" cy="119" r="7" fill="#ef5b2a"/>
+
+  <text x="842" y="267" fill="#625d54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="1.4">SANTA CLARA, CA · MAY 2028</text>
+</svg>

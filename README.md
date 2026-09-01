@@ -1,54 +1,110 @@
-# Aaditya Desai
-
-I'm a Computer Engineering student at San José State University, graduating in May 2028. I build software that has to work within real constraints: limited compute, unreliable connectivity, tight latency budgets, or a bounded context window. I like working through the full system, from the model or protocol to the application around it.
-
-**Seeking Summer 2027 software engineering internships.**
-
-<p>
-  <a href="https://aadityad.dev" title="Portfolio"><img src="https://api.iconify.design/mdi/web.svg?color=%23006CFF" width="28" height="28" alt="Portfolio"></a>&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/aaditya-desai-12d" title="LinkedIn"><img src="https://api.iconify.design/simple-icons/linkedin.svg?color=%230A66C2" width="28" height="28" alt="LinkedIn"></a>&nbsp;&nbsp;
-  <a href="mailto:aaditya.d.desai@gmail.com" title="Email"><img src="https://api.iconify.design/simple-icons/gmail.svg?color=%23EA4335" width="28" height="28" alt="Email"></a>&nbsp;&nbsp;
-  <a href="https://aadityad.dev/Aaditya_Desai_Portfolio_Resume.pdf" title="Résumé"><img src="https://api.iconify.design/mdi/file-pdf-box.svg?color=%23EC1C24" width="28" height="28" alt="Résumé"></a>
+<p align="center">
+  <img src="./assets/profile-header.svg" width="100%" alt="Aaditya Desai, Computer Engineering student at San José State University, seeking Summer 2027 software engineering internships">
 </p>
+
+<p align="center">
+  <a href="https://aadityad.dev" title="Portfolio"><img src="https://api.iconify.design/mdi/web.svg?color=%23EF5B2A" width="30" height="30" alt="Portfolio"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/aaditya-desai-12d" title="LinkedIn"><img src="https://api.iconify.design/simple-icons/linkedin.svg?color=%230A66C2" width="30" height="30" alt="LinkedIn"></a>&nbsp;&nbsp;&nbsp;
+  <a href="mailto:aaditya.d.desai@gmail.com" title="Email"><img src="https://api.iconify.design/simple-icons/gmail.svg?color=%23EA4335" width="30" height="30" alt="Email"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://aadityad.dev/Aaditya_Desai_Portfolio_Resume.pdf" title="Résumé"><img src="https://api.iconify.design/mdi/file-pdf-box.svg?color=%23EC1C24" width="30" height="30" alt="Résumé"></a>
+</p>
+
+I build software that has to work within real constraints: limited compute, unreliable connectivity, tight latency budgets, or a bounded context window. I like working through the full system, from the model or protocol to the application around it.
 
 ## Selected work
 
-### [Accordion](https://github.com/a-Fig/accordion) · [Live site](https://get-accordion.dev)
+### 01 / [Accordion](https://github.com/a-Fig/accordion) · [Live site](https://get-accordion.dev)
 
-Reversible context management for long-running coding agents. Instead of replacing an entire conversation with a lossy summary, Accordion can fold, unfold, and pin individual blocks as the context budget changes.
+**The Problem:** Long coding sessions eventually fill an agent's context window. The usual fix is to compress everything into one summary, which can remove details the agent needs later.
 
-I worked on its three-stage relevance pipeline, which combines keyword scoring, bi-encoder retrieval, and cross-encoder reranking. We built it at the 2026 UC Berkeley AI Hackathon, where it won The Token Company sponsor track.
+**The Solution:** Accordion treats the context window as reversible blocks that can be folded, unfolded, and pinned. I worked on the keyword, bi-encoder, and cross-encoder relevance pipeline. Our team built it at the 2026 UC Berkeley AI Hackathon and won The Token Company sponsor track.
 
-<sub>Python · TypeScript · Hugging Face Transformers · SvelteKit</sub>
-
----
-
-### [GazeBoard](https://github.com/aadityad12/GazeBoard)
-
-An Android prototype that lets people select and speak phrases using their eyes. Camera data stays on the phone, and the app declares no network permission.
-
-I built the pipeline from CameraX capture through face detection, LiteRT inference, four-point calibration, dwell selection, and text-to-speech. The inference path targets the Qualcomm Hexagon NPU through LiteRT's `CompiledModel` API.
-
-<sub>Kotlin · Jetpack Compose · CameraX · LiteRT · ML Kit</sub>
+<p>
+  <strong>Tech Stack:</strong>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="28" alt="Python" title="Python">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" height="28" alt="TypeScript" title="TypeScript">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg" height="28" alt="Svelte" title="Svelte">&nbsp;
+  <img src="https://api.iconify.design/simple-icons/huggingface.svg?color=%23FFD21E" height="28" alt="Hugging Face Transformers" title="Hugging Face Transformers">
+</p>
 
 ---
 
-### [ApexTracker](https://github.com/aadityad12/Apex-Tracker)
+### 02 / [GazeBoard](https://github.com/aadityad12/GazeBoard)
 
-An offline-first Android app I use for budgeting, study tracking, reminders, notes, screen time, and research papers. Room is the source of truth, while sign-in adds optional Firestore sync.
+**The Problem:** A gaze-based communication aid should not require dedicated hardware or send continuous face video to a server.
 
-The codebase includes encrypted local storage, biometric access, reboot-safe alarms, home-screen widgets, schema migrations, and automated tests. It has grown from a habit-building project into software I use every day.
+**The Solution:** GazeBoard turns an Android phone into an offline gaze-to-speech device. I built the pipeline from CameraX capture through face detection, LiteRT inference, four-point calibration, dwell selection, and text-to-speech. The app declares no network permission and targets the Qualcomm Hexagon NPU.
 
-<sub>Kotlin · Jetpack Compose · Room · SQLite · Firebase · WorkManager</sub>
+<p>
+  <strong>Tech Stack:</strong>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" height="28" alt="Kotlin" title="Kotlin">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg" height="28" alt="Android" title="Android">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetpackcompose/jetpackcompose-original.svg" height="28" alt="Jetpack Compose" title="Jetpack Compose">&nbsp;
+  <img src="https://api.iconify.design/mdi/memory.svg?color=%23EF5B2A" height="28" alt="LiteRT on Qualcomm NPU" title="LiteRT on Qualcomm NPU">
+</p>
 
 ---
 
-### [Temper](https://github.com/aadityad12/Temper)
+### 03 / [ApexTracker](https://github.com/aadityad12/Apex-Tracker)
 
-A prototype for evaluating the environment around an AI agent, including its system prompt, tools, and skill files, against a bare-model baseline on the same tasks.
+**The Problem:** Budgets, study time, reminders, notes, screen time, and reading lists often end up in separate apps, each with its own account and cloud dependency.
 
-I built the local evaluation harness and FastAPI service, along with the patch and re-evaluation loop. The repository includes a deterministic integration path so the full workflow can be tested without model API keys.
+**The Solution:** ApexTracker puts those workflows in one offline-first Android app that I use every day. Room remains the source of truth, while sign-in adds optional Firestore sync. The codebase includes encrypted storage, biometric access, reboot-safe alarms, widgets, schema migrations, and automated tests.
 
-<sub>Python · FastAPI · JSON Schema · Server-Sent Events · LLM evaluation</sub>
+<p>
+  <strong>Tech Stack:</strong>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" height="28" alt="Kotlin" title="Kotlin">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetpackcompose/jetpackcompose-original.svg" height="28" alt="Jetpack Compose" title="Jetpack Compose">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" height="28" alt="SQLite" title="Room and SQLite">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" height="28" alt="Firebase" title="Firebase and Firestore">
+</p>
 
-More projects and longer writeups are available on [aadityad.dev](https://aadityad.dev).
+---
+
+### 04 / [Temper](https://github.com/aadityad12/Temper)
+
+**The Problem:** When an AI agent performs poorly, it is hard to tell whether the model is the problem or whether its prompt, tools, or skill files are getting in the way.
+
+**The Solution:** Temper compares an agent environment with a bare-model baseline on the same tasks. It finds regressions, generates targeted replacement files, and runs the affected checks again. I built the local evaluation harness, FastAPI service, patch loop, and deterministic integration path.
+
+<p>
+  <strong>Tech Stack:</strong>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="28" alt="Python" title="Python">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" height="28" alt="FastAPI" title="FastAPI">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" height="28" alt="React" title="React">&nbsp;
+  <img src="https://api.iconify.design/vscode-icons/file-type-json.svg" height="28" alt="JSON Schema" title="JSON Schema">
+</p>
+
+---
+
+### 05 / [Echo](https://github.com/aadityad12/Echo)
+
+**The Problem:** Emergency alerts depend on the same internet and cellular infrastructure that may fail during a disaster.
+
+**The Solution:** Echo is a prototype for receiving, storing, and relaying alerts between nearby phones over Bluetooth Low Energy. It uses a custom chunked-transfer protocol with native Android and iOS GATT servers, plus Raspberry Pi relay tools and offline translation for received alerts.
+
+<p>
+  <strong>Tech Stack:</strong>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" height="28" alt="Flutter" title="Flutter">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" height="28" alt="Dart" title="Dart">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" height="28" alt="Kotlin" title="Kotlin">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" height="28" alt="Swift" title="Swift">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg" height="28" alt="Raspberry Pi" title="Raspberry Pi">
+</p>
+
+---
+
+### 06 / [Clear Dispatch](https://github.com/aadityad12/Clear-Dispatch)
+
+**The Problem:** During call surges, dispatchers have to triage incidents and assign resources quickly. In a high-stakes workflow, automation also needs clear human control.
+
+**The Solution:** Clear Dispatch is a local emergency-dispatch simulation with intake, triage, routing, and briefing stages. Heavy resources remain blocked until a dispatcher approves them, while a WebSocket dashboard streams calls, assignments, holds, and audit events in real time.
+
+<p>
+  <strong>Tech Stack:</strong>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="28" alt="Python" title="Python">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" height="28" alt="FastAPI" title="FastAPI">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" height="28" alt="React" title="React">&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" height="28" alt="TypeScript" title="TypeScript">&nbsp;
+  <img src="https://api.iconify.design/mdi/lan-connect.svg?color=%2357637A" height="28" alt="WebSockets" title="WebSockets">
+</p>
