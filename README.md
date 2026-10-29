@@ -6,11 +6,11 @@
   <a href="https://aadityad.dev" title="Portfolio"><img src="https://api.iconify.design/mdi/web.svg?color=%23EF5B2A" width="30" height="30" alt="Portfolio"></a>&nbsp;&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/aaditya-desai-12d" title="LinkedIn"><img src="https://api.iconify.design/simple-icons/linkedin.svg?color=%230A66C2" width="30" height="30" alt="LinkedIn"></a>&nbsp;&nbsp;&nbsp;
   <a href="mailto:aaditya.d.desai@gmail.com" title="Email"><img src="https://api.iconify.design/simple-icons/gmail.svg?color=%23EA4335" width="30" height="30" alt="Email"></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://devpost.com/aadityad12" title="Devpost"><img src="https://api.iconify.design/simple-icons/devpost.svg?color=%23003E54" width="30" height="30" alt="Devpost"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://devpost.com/aadityad12" title="Devpost"><img src="https://api.iconify.design/simple-icons/devpost.svg?color=%2300A3C4" width="30" height="30" alt="Devpost"></a>&nbsp;&nbsp;&nbsp;
   <a href="https://aadityad.dev/Aaditya_Desai_Portfolio_Resume.pdf" title="Résumé"><img src="https://api.iconify.design/mdi/file-pdf-box.svg?color=%23EC1C24" width="30" height="30" alt="Résumé"></a>
 </p>
 
-Computer Engineering student at San José State University, minoring in AI. I've built a programming language with a register VM and an ARM64 JIT, led the software on an on-device navigation aid with Infineon, and I TA SJSU's Introduction to Engineering.
+Computer Engineering student at San José State University (expected May 2028), minoring in AI. I've built a programming language with a register VM and an ARM64 JIT, led the software on an on-device navigation aid with Infineon, and I'm a TA for SJSU's Introduction to Engineering.
 
 ## Experience
 
@@ -27,7 +27,9 @@ Computer Engineering student at San José State University, minoring in AI. I've
 
 **The Problem:** Every explanation of how interpreters get fast lists the same techniques: bytecode, register machines, NaN-boxed values, JITs. Few of them measure what each one is actually worth.
 
-**The Solution:** Rung is a small language I built five times over in C++20: a tree-walker, a stack VM, a register VM, a baseline ARM64 JIT with a hand-written encoder verified against the LLVM assembler, and a JIT that compiles on a background thread. Each rung adds one change, and all engines must print byte-identical output. The stack VM runs 1.30x to 4.99x faster than the tree-walker, and the JIT reaches 22.64x on the one benchmark where a function compiles. NaN-boxing made every benchmark slower, and that result stays in the table. Testing covers a conformance suite on every engine, ASan, UBSan, TSan, libFuzzer, and CI on macOS ARM64, Linux ARM64, and Linux x86-64.
+**The Solution:** Rung is a small language I built five times over in C++20: a tree-walker, a stack VM, a register VM, a baseline ARM64 JIT with a hand-written encoder verified against the LLVM assembler, and a JIT that compiles on a background thread. Each rung adds one change, and all engines must print byte-identical output. The interpreter foundations follow *Crafting Interpreters* and Lua 5.0; the optimization experiments, the JIT, background compilation, and the measurement pipeline extend them.
+
+The stack VM runs at 1.30x to 4.99x the speed of the tree-walker. The JIT compiles functions in two of the six benchmarks, and in one interleaved session it ran `fib` 4.54x faster than the optimized register VM (13.37 ms to 2.94 ms). NaN-boxing made every benchmark slower, and that result stays in the table. Testing covers 529 conformance programs on every engine, ASan, UBSan, TSan, libFuzzer on the front end, and CI on macOS ARM64, Linux ARM64, and Linux x86-64.
 
 <p>
   <strong>Tech Stack:</strong>&nbsp;&nbsp;
@@ -44,7 +46,7 @@ Computer Engineering student at San José State University, minoring in AI. I've
 
 **The Problem:** Someone walking a sidewalk without sight needs to know what is ahead and how far away it is, without relying on a phone, the cloud, or a signal.
 
-**The Solution:** VisionAssist is a head-mounted Raspberry Pi 5 and camera that detects obstacles, estimates their distance, and speaks through Bluetooth earbuds, fully on-device. It was built with Infineon Technologies through De Anza College, and I was the software lead. I built the pipeline: YOLOv8n detection on the Pi's CPU at about 200 ms per frame, distance from bounding-box height, risk-ranked announcements in feet and steps, and offline Piper speech, running as a systemd service that boots headless. I also evaluated Infineon's 60 GHz radar, traced why camera-radar fusion wasn't feasible in one quarter, cut it, and wrote up the findings. We demoed the finished device to the Infineon sponsors.
+**The Solution:** VisionAssist is a head-mounted Raspberry Pi 5 and camera that detects obstacles, estimates their distance, and speaks through Bluetooth earbuds, fully on-device. It was built with Infineon Technologies through De Anza College, and I was the software lead. I built the pipeline: YOLOv8n detection on the Pi's CPU at about 200 ms per frame, distance from bounding-box height, risk-ranked announcements in feet and steps, and offline Piper speech, running as a systemd service that boots headless. I also evaluated Infineon's BGT60TR13C 60 GHz radar on a PSoC 6 AI Kit, traced why camera-radar fusion wasn't feasible in one quarter (antenna leakage at close range, about 175 cm of usable range, and no way to tell which object a reflection came from), cut it, and wrote up the findings. We demoed the finished device to the Infineon sponsors.
 
 <p>
   <strong>Tech Stack:</strong>&nbsp;&nbsp;
@@ -52,16 +54,16 @@ Computer Engineering student at San José State University, minoring in AI. I've
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" height="28" alt="PyTorch" title="PyTorch and Ultralytics YOLOv8n">&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" height="28" alt="OpenCV" title="OpenCV">&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg" height="28" alt="Raspberry Pi" title="Raspberry Pi 5">&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" height="28" alt="Flask" title="Flask">
+  <img src="https://api.iconify.design/simple-icons/flask.svg?color=%23888888" height="28" alt="Flask" title="Flask">
 </p>
 
 ---
 
 ### 03 / [OSS Scout](https://github.com/aadityad12/oss-scout) · [Contributions](https://oss.aadityad.dev)
 
-**The Problem:** Finding a good open-source issue takes hours of searching, and automating it the obvious way adds to the low-effort, machine-generated PRs maintainers are already buried in.
+**The Problem:** Finding a good open-source issue means searching across many projects, and automating it the obvious way adds to the low-effort, machine-generated PRs maintainers are already buried in.
 
-**The Solution:** OSS Scout automates the search and preparation and leaves the decisions to me. A nightly scan on GitHub Actions ranks open issues by how friendly each project is to outside contributors, measured from its last 300 closed PRs, and reads each project's contribution and AI policies. A scheduled Claude Code routine prepares at most one tested draft a night for review on a private Cloudflare dashboard, and nothing is posted without my one tap. The unattended routine can't write to GitHub: a guard hook blocks every write path, and the only write token lives where the routine never sees it. About 278 pytest tests cover the scanner, policy detection, and the guard.
+**The Solution:** OSS Scout automates the search and preparation and leaves the decisions to me. A nightly scan on GitHub Actions ranks open issues by how friendly each project is to outside contributors, measured from its last 300 closed PRs, and reads each project's contribution and AI policies. A scheduled Claude Code routine prepares at most one tested draft a night for review on a private Cloudflare dashboard, and nothing is posted without my one tap. The unattended routine never sees the token that can open PRs or post comments; that token lives in the private data repo's secrets and is used only by the workflow my tap starts. A hook also rejects common GitHub write commands as a second layer. About 278 pytest tests cover the scanner, policy detection, and the guard.
 
 <p>
   <strong>Tech Stack:</strong>&nbsp;&nbsp;
@@ -73,7 +75,7 @@ Computer Engineering student at San José State University, minoring in AI. I've
 
 ---
 
-### 04 / [Accordion](https://github.com/a-Fig/accordion) · [Live site](https://get-accordion.dev)
+### 04 / [Accordion](https://github.com/a-Fig/accordion) · [Live site](https://get-accordion.dev) · [npm](https://www.npmjs.com/package/@a-fig/accordion)
 
 **The Problem:** Long coding sessions eventually fill an agent's context window. The usual fix is to compress everything into one summary, which can remove details the agent needs later.
 
@@ -84,7 +86,7 @@ Computer Engineering student at San José State University, minoring in AI. I've
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" height="28" alt="TypeScript" title="TypeScript">&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg" height="28" alt="Svelte" title="Svelte and SvelteKit">&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tauri/tauri-original.svg" height="28" alt="Tauri" title="Tauri">&nbsp;
-  <img src="https://api.iconify.design/simple-icons/huggingface.svg?color=%23FFD21E" height="28" alt="Hugging Face Transformers" title="Hugging Face Transformers">
+  <img src="https://api.iconify.design/simple-icons/huggingface.svg?color=%23FF9D00" height="28" alt="Hugging Face Transformers" title="Hugging Face Transformers">
 </p>
 
 ---
@@ -109,7 +111,7 @@ Computer Engineering student at San José State University, minoring in AI. I've
 
 **The Problem:** Someone who can't speak or use their hands needs a way to communicate that doesn't require dedicated hardware or send continuous video of their face to a server.
 
-**The Solution:** GazeBoard turns an Android phone into an offline gaze-to-speech board. It crops one eye, runs Qualcomm's EyeGaze model on the Snapdragon Hexagon NPU through LiteRT, and speaks the tile the user dwells on. The app declares only the camera permission. We built it at the Qualcomm × Google LiteRT Developer Hackathon, and I built the NPU-only inference path (an error screen instead of a silent CPU fallback), the on-screen debug overlay, and the recalibration flow, and later rewrote the docs with validation and limitations sections.
+**The Solution:** GazeBoard turns a Snapdragon SM8750 Android phone into an offline gaze-to-speech board. It crops one eye, runs Qualcomm's EyeGaze model on the Snapdragon Hexagon NPU through LiteRT, and speaks the tile the user dwells on. The app declares only the camera permission. We built it at the Qualcomm × Google LiteRT Developer Hackathon, and I built the NPU-only inference path (an error screen instead of a silent CPU fallback), the on-screen debug overlay, and the recalibration flow, and later rewrote the docs with validation and limitations sections.
 
 <p>
   <strong>Tech Stack:</strong>&nbsp;&nbsp;
@@ -119,11 +121,13 @@ Computer Engineering student at San José State University, minoring in AI. I've
   <img src="https://api.iconify.design/mdi/memory.svg?color=%23EF5B2A" height="28" alt="LiteRT on Qualcomm NPU" title="LiteRT on Qualcomm NPU">
 </p>
 
+---
+
 ### More projects
 
 - **[Temper](https://github.com/aadityad12/Temper)**: Compares an AI agent's harness against a bare-model baseline to find where its prompt, skills, or tools make it worse, then patches and re-evaluates. I built the local evaluation harness, the FastAPI service, and the patch loop. AI Engineer World's Fair Hackathon 2026.
-- **[Clear Dispatch](https://github.com/aadityad12/Clear-Dispatch)**: Emergency-dispatch simulation with a four-stage pipeline where heavy resources stay blocked until a dispatcher approves them. I built the entire backend. HackDavis 2026.
-- **[Echo](https://github.com/aadityad12/Echo)**: Relays emergency alerts between nearby phones over Bluetooth Low Energy, with no internet. I ported it to Flutter, wrote the native Android and iOS GATT servers and chunked transfer, and built the Raspberry Pi relay. Hack for Humanity 2026.
+- **[Clear Dispatch](https://github.com/aadityad12/Clear-Dispatch)**: Emergency-dispatch simulation with a four-stage pipeline where heavy resources stay blocked until a dispatcher approves them. I built the backend's first full version: the four pipeline stages, the FastAPI routers, the WebSocket hub, and the call simulator. HackDavis 2026.
+- **[Echo](https://github.com/aadityad12/Echo)**: A Flutter prototype that receives, stores, and relays emergency alerts between nearby phones over Bluetooth Low Energy, with no internet. I ported it to Flutter, including the native Android and iOS GATT servers and chunked transfer, and built the Raspberry Pi relay. Hack for Humanity 2026.
 
 ## Certifications
 
