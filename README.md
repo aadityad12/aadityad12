@@ -19,7 +19,7 @@ I'm Aadi. I build at every layer, from bare-metal firmware and a JIT compiler up
 
 ## Projects
 
-### Rung
+## Rung
 
 **A small programming language built five times over, to measure what each classic interpreter speed-up is actually worth.**<br>
 Solo · Sep to Oct 2026 · C++20, ARM64 assembly, CMake · [Code](https://github.com/aadityad12/rung)
@@ -33,7 +33,7 @@ Solo · Sep to Oct 2026 · C++20, ARM64 assembly, CMake · [Code](https://github
 
 ---
 
-### Alta
+## Alta
 
 **A voice-driven lab teaching assistant for intro electronics. It measures the student's breadboard with real probes and walks them to the fault instead of handing over the answer.**<br>
 Team of four · Cal Hacks 13.0, Oct 2026 · C, Python, FastAPI, React, Claude · [Code](https://github.com/aadityad12/Alta)
@@ -49,7 +49,7 @@ Team of four · Cal Hacks 13.0, Oct 2026 · C, Python, FastAPI, React, Claude ·
 
 ---
 
-### VisionAssist
+## VisionAssist
 
 **A head-mounted Raspberry Pi 5 and camera that tell someone who can't see what is ahead and how far away it is, with no phone, cloud, or internet.**<br>
 Software lead, team of five · With Infineon Technologies through De Anza College · Apr to Jun 2026 · Python, PyTorch, OpenCV · [Code](https://github.com/aadityad12/Vision-Assist)
@@ -63,7 +63,7 @@ Software lead, team of five · With Infineon Technologies through De Anza Colleg
 
 ---
 
-### Accordion
+## Accordion
 
 **A context manager for AI coding agents. It folds away material that isn't carrying weight, reversibly and in plain sight.**<br>
 Team of four · Winner, The Token Company sponsor track, UC Berkeley AI Hackathon 2026 · 240+ stars · TypeScript, Svelte, Tauri · [Code](https://github.com/a-Fig/accordion) · [Site](https://get-accordion.dev)
@@ -77,7 +77,7 @@ Team of four · Winner, The Token Company sponsor track, UC Berkeley AI Hackatho
 
 ---
 
-### ApexTracker
+## ApexTracker
 
 **A private, offline-first Android app that replaced my sticky notes, three reminder apps, a calendar, and my budget spreadsheets. I use it every day.**<br>
 Solo · Jan 2026 to present · Kotlin, Jetpack Compose, Room, SQLCipher · [Code](https://github.com/aadityad12/Apex-Tracker)
@@ -92,7 +92,7 @@ Solo · Jan 2026 to present · Kotlin, Jetpack Compose, Room, SQLCipher · [Code
 
 ---
 
-### OSS Scout
+## OSS Scout
 
 **A nightly scout for open-source contributions that keeps a human in charge. Nothing is posted without my one tap.**<br>
 Solo · Sep to Oct 2026 · In daily use · Python, GitHub Actions, Cloudflare Workers, Claude Code · [Code](https://github.com/aadityad12/oss-scout) · [My contributions](https://oss.aadityad.dev)
