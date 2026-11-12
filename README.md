@@ -31,17 +31,23 @@ Solo · Sep to Oct 2026 · C++20, ARM64 assembly, CMake · [Code](https://github
 - Five engines share one front end, runtime, and garbage collector: a tree-walker, a stack VM, a register VM, a baseline ARM64 JIT, and a JIT that compiles on a background thread. All five must print byte-identical output.
 - The JIT has no code-generation library: I wrote the ARM64 encoder by hand and verified it byte for byte against the LLVM assembler. Every result stays in the table, regressions included, and CI fails if the table drifts from the recorded runs.
 
+---
+
 ### Alta
 
 **A voice-driven lab teaching assistant for intro electronics. It measures the student's breadboard with real probes and walks them to the fault instead of handing over the answer.**<br>
 Team of four · Cal Hacks 13.0, Oct 2026 · C, Python, FastAPI, React, Claude · [Code](https://github.com/aadityad12/Alta)
 
 <p align="center">
-  <a href="https://github.com/aadityad12/Alta"><img src="./assets/alta-bench.svg" width="100%" alt="Alta in four stages: probes on the student's board, a probe pod running bare-metal C, a Claude agent that measures before it diagnoses, and voice. Below, an example exchange where a probe reading of 5.01 V leads Alta to ask a question and the fix is confirmed at 2.01 V."></a>
+  <a href="https://github.com/aadityad12/Alta#how-it-works"><img src="./assets/alta-setup.png" width="100%" alt="ALTA setup diagram from the project repo: an Arduino Uno probe pod in its printed dock measures the student's breadboard, a phone camera sits above it, and a USB-connected laptop shows the voltage reading and spoken hint."></a>
+  <br>
+  <sub>From the project repo: the bench setup. <a href="https://github.com/aadityad12/Alta/tree/main/firmware">Bare-metal firmware</a> · <a href="https://github.com/aadityad12/Alta/blob/main/cad/MINI_POD_WIRING.md">Probe-pod wiring</a></sub>
 </p>
 
 - **My part: the probe pod and its firmware**, in bare-metal C with no Arduino libraries (an interrupt-driven ADC, a ring-buffered UART), plus the lab definitions and the probe monitor.
 - On the real board, 3 of 3 timed runs found and fixed the fault. In simulation it named the right fault in 42 of 42 runs and gave the fix away early in 1.
+
+---
 
 ### VisionAssist
 
@@ -55,6 +61,8 @@ Software lead, team of five · With Infineon Technologies through De Anza Colleg
 - Everything runs in one Python process on the Pi 5's CPU at about 5 frames a second, and it boots headless as a systemd service. It is a proof of concept: it can't detect stairs or drop-offs.
 - **The radar I cut.** Infineon gave us a 60 GHz radar to build around. I traced why camera-radar fusion wasn't feasible in one quarter (phantom obstacles at close range, about 175 cm of usable range), cut it, and wrote up the findings for Infineon.
 
+---
+
 ### Accordion
 
 **A context manager for AI coding agents. It folds away material that isn't carrying weight, reversibly and in plain sight.**<br>
@@ -66,6 +74,8 @@ Team of four · Winner, The Token Company sponsor track, UC Berkeley AI Hackatho
 
 - **My part: the conductor**, the policy that decides what to fold and what to bring back. It scores relevance in three stages (keywords, bi-encoder retrieval, a cross-encoder rerank) and calibrates its own fold target.
 - On SlopCodeBench at a 100K budget it solved 5 of 6 problems against 2 of 6 for naive compaction. That is one hackathon-scale run, not a published benchmark.
+
+---
 
 ### ApexTracker
 
@@ -80,6 +90,8 @@ Solo · Jan 2026 to present · Kotlin, Jetpack Compose, Room, SQLCipher · [Code
 - Receipt capture uses on-device ML Kit text recognition through the photo picker, so it needs no camera permission and uploads nothing. A biometric lock gates Budget and Notes.
 - About 525 unit tests cover the logic pulled out of the ViewModels, alongside Compose screenshot tests. One rule decides what ships: would I open this every single day?
 
+---
+
 ### OSS Scout
 
 **A nightly scout for open-source contributions that keeps a human in charge. Nothing is posted without my one tap.**<br>
@@ -91,6 +103,8 @@ Solo · Sep to Oct 2026 · In daily use · Python, GitHub Actions, Cloudflare Wo
 
 - The scan ranks open issues by how each project treats outside contributors, measured from its last 300 closed pull requests: merge rate, days to merge, and time to a maintainer's first reply.
 - The unattended part can't post. It never sees the token that can open pull requests, and a Claude Code hook blocks every GitHub write command as a second layer.
+
+---
 
 ## More projects
 
