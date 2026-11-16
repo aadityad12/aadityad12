@@ -4,7 +4,11 @@
 
 **[Portfolio](https://aadityad.dev)** · **[Résumé](https://aadityad.dev/Aaditya_Desai_Portfolio_Resume.pdf)** · **[LinkedIn](https://www.linkedin.com/in/aaditya-desai-12d)** · **[Email](mailto:aaditya.d.desai@gmail.com)** · **[Devpost](https://devpost.com/aadityad12)**
 
-I'm Aadi. I build at every layer, from bare-metal firmware and a JIT compiler up to AI agents and an Android app I use every day, and I like work I can measure. This page is the short tour. Each project links to a repo with the full write-up, the numbers, and what still doesn't work.
+I'm Aadi. I build at every layer, from bare-metal firmware and a JIT compiler up to AI agents and an Android app I use every day. 
+
+This page is the short tour. 
+
+Each project links to a repo with the full write-up of what I built and why, along with the numbers.
 
 ### Where to look
 
